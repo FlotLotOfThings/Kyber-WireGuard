@@ -1,0 +1,8 @@
+ccflags-y += -DKYBER_K=2
+wireguard-y += kyber/aes256ctr.o kyber/symmetric-aes.o kyber/symmetric-shake.o
+wireguard-y += kyber/fips202.o
+wireguard-y += kyber/sha256.o kyber/sha512.o
+wireguard-y += kyber/cbd.o
+wireguard-y += kyber/poly.o kyber/polyvec.o kyber/ntt.o kyber/reduce.o
+wireguard-y += kyber/verify.o
+wireguard-y += kyber/indcpa.o kyber/kem.o
